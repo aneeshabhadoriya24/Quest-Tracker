@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daily Quest Tracker</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+
+        <div id="welcomeScreen" class="screen active">
+            <div class="card">
+                 <h1>Hello Explorer!🌼</h1>
+            <p>welcome to your Daily Quest tracker 🌿</p>
+            <button onclick="enterApp()">Enter</button>
+
+            </div>
+           
+        </div>
+
+        <div id="dashboard" class="screen hidden">
+            <h1> Heyya! Your Dashboard is here 🌿</h1>
+
+            <div class="stats">
+                <h3>Credits: <span id="credits">0</span></h3>
+                <h3>Rank: <span id="rank">Bronze</span></h3>
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="taskInput"  placeholder="Add today's task" >
+                <button onclick="addTask()">Add</button>
+             </div>
+             <ul id="taskList"></ul>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
